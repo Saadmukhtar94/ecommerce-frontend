@@ -32,7 +32,7 @@ const Carousel = ({ images }) => {
             <div 
               key={index}  
               className={`carousel-item ${index === 0 ? "active" : ""}`}  
-              data-bs-interval="3000"
+              data-bs-interval="2000"
             >
               <Image 
                 src={img.src}  
