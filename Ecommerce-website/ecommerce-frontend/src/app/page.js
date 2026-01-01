@@ -5,6 +5,7 @@ import Carousel from "./Components/Carousel";
 import DealCarousel from "./Components/DealCarousel";
 
 import Header from "./Components/Header";
+import Companies from "./Components/Companies";
 export default function Home() {
   return (
     <div className="d-flex flex-column ">
@@ -13,7 +14,9 @@ export default function Home() {
 
       <Carousel/>
      <Banner/>
+     <Companies/>
      <DealCarousel/>
+
     </div>
   );
 }
