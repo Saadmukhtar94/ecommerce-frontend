@@ -1,0 +1,13 @@
+#Companies-container{
+    margin-top: 800px;
+}
+.Companies:hover{
+      transform: scale(1.1);
+cursor:cell;
+  transition: all 0.2s ease;
+padding: 10px 10px;
+    
+}
+.CompaniesSpan{
+    color: royalblue;
+}

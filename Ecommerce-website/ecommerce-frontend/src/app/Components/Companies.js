@@ -1,62 +1,63 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import styles from "./Components.module.css"
 const Companies  = () => {
   return (
-    <div className=''>
-        <h3>Top <span className='text-danger'>companies</span><i className="fa-solid fa-mobile-button "></i></h3>
-        <section className='d-flex justify-content-evenly px-5'>
+    <div className='mt-5 mb-5' id="Companies-container">
+        <h3 className='px-5'>Top <span  className={styles.CompaniesSpan}>companies</span><i className="fa-solid fa-mobile-button "></i></h3>
+        <div className='d-flex justify-content-evenly overflow-y-hidden mt-5'>
             <Link href="/">
-<div className="companies"><Image
+<div className={styles.Companies}><Image
 src="/apple.png"
-width={150}
-height={150}
+width={120}
+height={120}
 alt="apple"
 /></div></Link>
-<Link href="/">
-<div className="companies"><Image
+<Link href="/about">
+<div className={styles.Companies}><Image
 src="/samsung1.png"
-width={150}
-height={150}
+width={120}
+height={120}
 alt="apple"
 /></div></Link>
 <Link href="/">
-<div className="companies"><Image
+<div className={styles.Companies}><Image
 src="/social.png"
-width={150}
-height={150}
+width={120}
+height={120}
 alt="apple"
 /></div></Link>
 <Link href="/">
-<div className="companies"><Image
+<div className={styles.Companies}><Image
 src="/xiaomi.png"
-width={150}
-height={150}
+width={120}
+height={120}
 alt="apple"
 /></div></Link>
 <Link href="/">
-<div className="companies"><Image
+<div className={styles.Companies}><Image
 src="/huawei.png"
-width={150}
-height={150}
+width={120}
+height={120}
 alt="apple"
 /></div></Link>
 <Link href="/">
-<div className="companies"><Image
+<div className={styles.Companies}><Image
 src="/apple.png"
-width={150}
-height={150}
+width={120}
+height={120}
 alt="apple"
 /></div></Link>
 <Link href="/">
-<div className="companies"><Image
+<div className={styles.Companies}><Image
 src="/apple.png"
-width={150}
-height={150}
+width={120}
+height={120}
 alt="apple"
 /></div></Link>
 
-        </section>
+        </div>
     </div>
   )
 }
