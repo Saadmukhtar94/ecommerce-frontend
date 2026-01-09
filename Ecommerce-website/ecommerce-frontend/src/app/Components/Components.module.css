@@ -1,11 +1,14 @@
+#bannerContainer{
+  cursor:grab;
+  background-color: rgb(148, 90, 14);
+}
 #Companies-container{
     margin-top: 800px;
 }
 .Companies:hover{
       transform: scale(1.1);
-cursor:cell;
   transition: all 0.2s ease;
-padding: 10px 10px;
+padding: 10px ;
     
 }
 .CompaniesSpan{
