@@ -1,0 +1,44 @@
+.title{
+    text-align: center;
+    padding: 10px;
+}
+.flex{
+    padding-top: 5em;
+    /* background-color:rgb(231, 231, 136) ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(48, 48, 28);
+}
+.price{
+    font-weight: bold;
+font-size: large;}
+
+.card:hover{
+    transform: translateY(-7px);
+box-shadow: rgba(43, 42, 42, 0.2) 0px 2px 8px 0px;    transition: all 0.5s ease;
+    padding: 5px 5px;
+
+}
+.card {
+ 
+  border-radius: 8px;
+  z-index: 1;
+  transition: 0.5s;
+}
+.image:hover{
+    width: 220px;
+    height: 220px;
+       transform: scale(1.1);
+  transition: all 1s ease;
+overflow-x: hidden;
+padding: 5px 5px;
+}

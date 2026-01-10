@@ -30,7 +30,7 @@ const Page = async ({ params }) => {
           No phones found for <strong>{brands}</strong>.
         </p>
       ) : (
-        <div className={styles.grid}>
+        <div className={styles.flex}>
           {phones.map((phone) => {
             const name = phone.Name || "No Name";
             const price = phone.Price !== undefined ? phone.Price : "N/A";
@@ -53,10 +53,10 @@ const Page = async ({ params }) => {
                   /> */}
                   <img
   src={imageUrl}
-  width={160}
-  height={160}
+  width={200}
+  height={200}
   alt={name}
-  style={{ objectFit: "cover" }}
+  className={styles.image}
 />
                 </div>
 
