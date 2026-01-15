@@ -2,8 +2,10 @@ import React from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "../../Components/Header";
-
+// import { useState } from "react";
 const Page = async ({ params }) => {
+    // const [loading, setLoading] = useState(true);
+
   // Extract brand slug from URL
   const { brands } = await params;
 
@@ -33,7 +35,7 @@ const Page = async ({ params }) => {
           No phones found for <strong>{brands}</strong>.
         </p>
       ) : (
-        <div className={styles.flex}>
+        <div className="row">
           {phones.map((phone) => {
             const name = phone.Name || "No Name";
             const price = phone.Price !== undefined ? phone.Price : "N/A";
@@ -45,36 +47,39 @@ const Page = async ({ params }) => {
               : "/placeholder.png";
 
             return (
-
-        <div class="card border-0 w-25 "
-         key={phone.id}
+<div className="col-md-4"
+key={phone.id}
+>
+        <div className="card border-0 mb-6  mt-3"
+        //  key={phone.id}
          >
  <div>
                  
                   <img
   src={imageUrl}
-  width={300}
-  height={200}
+  width={330}
+  height={250}
   alt={name}
 />
                 </div>  
-                 <div class="card-body d-flex justify-content-between">
-    <h5 class="card-title "><a href="#" className="text-decoration-none text-success">
+                 <div className="card-body d-flex justify-content-between">
+    <h5 className="card-title "><a href="#" className="text-decoration-none text-dark">
         {name}
         </a></h5>
-    <p class="card-text"><i class="fa-regular fa-bookmark"></i></p>
+    <p className="card-text"><i className="fa-regular fa-bookmark"></i></p>
   </div>
   <hr/>
-  <div class="card-body">
+  <div className="card-body">
   
-   <ul class="list-unstyled d-flex justify-content-between ">
-    <li><h4> aed
+   <ul className="list-unstyled d-flex justify-content-between ">
+    <li><h4> <span className="fs-6 px-1">aed</span>
         {price}
         </h4></li>
-    <li>  <button class="btn btn-success">Buy Now</button></li>
+    <li>  <button className="btn btn-dark">Buy Now</button></li>
 
    </ul>
   </div>
+</div>
 </div>
             );
           })}
