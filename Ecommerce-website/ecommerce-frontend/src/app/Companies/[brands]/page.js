@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
+import Header from "../../Components/Header";
 
 const Page = async ({ params }) => {
   // Extract brand slug from URL
@@ -20,7 +21,9 @@ const Page = async ({ params }) => {
   const phones = data.data || [];
 
   return (
-    <div className={styles.container}>
+  <>
+  <Header/>
+   <div className={styles.container}>
       <h2 className={styles.title}>
         {brands.charAt(0).toUpperCase() + brands.slice(1)} Phones
       </h2>
@@ -42,21 +45,7 @@ const Page = async ({ params }) => {
               : "/placeholder.png";
 
             return (
-//               <div key={phone.id} className={styles.card}>
-//                 <div className={styles.imageWrapper}>
-                 
-//                   <img
-//   src={imageUrl}
-//   width={200}
-//   height={200}
-//   alt={name}
-//   className={styles.image}
-// />
-//                 </div>
 
-//                 <h3 className={styles.name}>{name}</h3>
-//                 <p className={styles.price}>{price}</p>
-//               </div>
         <div class="card border-0 w-25 "
          key={phone.id}
          >
@@ -67,7 +56,6 @@ const Page = async ({ params }) => {
   width={300}
   height={200}
   alt={name}
-  // className={styles.image}
 />
                 </div>  
                  <div class="card-body d-flex justify-content-between">
@@ -93,6 +81,8 @@ const Page = async ({ params }) => {
         </div>
       )}
     </div>
+  </>
+   
   );
 };
 
