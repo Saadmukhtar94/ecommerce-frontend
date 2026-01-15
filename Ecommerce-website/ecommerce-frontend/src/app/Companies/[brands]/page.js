@@ -42,27 +42,52 @@ const Page = async ({ params }) => {
               : "/placeholder.png";
 
             return (
-              <div key={phone.id} className={styles.card}>
-                <div className={styles.imageWrapper}>
-                  {/* <Image
-                    src={imageUrl}
-                    width={160}
-                    height={160}
-                    alt={name}
-                    style={{ objectFit: "cover" }}
-                  /> */}
+//               <div key={phone.id} className={styles.card}>
+//                 <div className={styles.imageWrapper}>
+                 
+//                   <img
+//   src={imageUrl}
+//   width={200}
+//   height={200}
+//   alt={name}
+//   className={styles.image}
+// />
+//                 </div>
+
+//                 <h3 className={styles.name}>{name}</h3>
+//                 <p className={styles.price}>{price}</p>
+//               </div>
+        <div class="card border-0 w-25 "
+         key={phone.id}
+         >
+ <div>
+                 
                   <img
   src={imageUrl}
-  width={200}
+  width={300}
   height={200}
   alt={name}
-  className={styles.image}
+  // className={styles.image}
 />
-                </div>
+                </div>  
+                 <div class="card-body d-flex justify-content-between">
+    <h5 class="card-title "><a href="#" className="text-decoration-none text-success">
+        {name}
+        </a></h5>
+    <p class="card-text"><i class="fa-regular fa-bookmark"></i></p>
+  </div>
+  <hr/>
+  <div class="card-body">
+  
+   <ul class="list-unstyled d-flex justify-content-between ">
+    <li><h4> aed
+        {price}
+        </h4></li>
+    <li>  <button class="btn btn-success">Buy Now</button></li>
 
-                <h3 className={styles.name}>{name}</h3>
-                <p className={styles.price}>${price}</p>
-              </div>
+   </ul>
+  </div>
+</div>
             );
           })}
         </div>

@@ -20,6 +20,7 @@ const Carousel = ({ images }) => {
 
   return (
     <div>
+    
       <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -36,15 +37,19 @@ const Carousel = ({ images }) => {
             >
               <Image 
                 src={img.src}  
-                width={100}
+                width={1000}
                 height={400}
-                className="d-block w-100"
+                className="d-block mx-auto mt-3 mb-3"
                 alt={img.alt}  
               />
             </div>
           ))}
 
         </div>
+      </div>
+      
+      <div>
+        
       </div>
     </div>
   )
