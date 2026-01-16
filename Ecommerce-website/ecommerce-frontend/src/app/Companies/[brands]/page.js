@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "../../Components/Header";
+import CompaniesBanner from "@/app/Components/CompaniesBanner";
 // import { useState } from "react";
 const Page = async ({ params }) => {
     // const [loading, setLoading] = useState(true);
@@ -25,6 +26,8 @@ const Page = async ({ params }) => {
   return (
   <>
   <Header/>
+      <CompaniesBanner/>
+
    <div className={styles.container}>
       <h2 className={styles.title}>
         {brands.charAt(0).toUpperCase() + brands.slice(1)} Phones

@@ -8,7 +8,10 @@ const Header = () => {
       <div className="d-flex justify-content-evenly align-items-center">
         {/* Logo */}
         <div>
-          <Image src="/firebaselogo.png" width="40" height="40" alt="logo" />
+          <Link href="/">
+                    <Image src="/firebaselogo.png" width="40" height="40" alt="logo" />
+
+          </Link>
         </div>
 
         {/* Navigation */}
@@ -16,16 +19,16 @@ const Header = () => {
           <Link href="/" className="text-light fw-bold text-decoration-none">
             Home
           </Link>
-          <Link href="/" className="text-light fw-bold text-decoration-none">
+          <Link href="/Companies/apple" className="text-light fw-bold text-decoration-none">
             Iphone
           </Link>
-          <Link href="/" className="text-light fw-bold text-decoration-none">
+          <Link href="/Companies/samsung" className="text-light fw-bold text-decoration-none">
             Samsung
           </Link>
-          <Link href="/" className="text-light fw-bold text-decoration-none">
+          <Link href="/Companies/samsung" className="text-light fw-bold text-decoration-none">
             Ipad
           </Link>
-          <Link href="/" className="text-light fw-bold text-decoration-none">
+          <Link href="/Companies/samsung" className="text-light fw-bold text-decoration-none">
             Smart Phones
           </Link>
           <Link href="/Contact" className="text-light fw-bold text-decoration-none">
