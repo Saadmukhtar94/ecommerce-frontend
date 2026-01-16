@@ -1,11 +1,10 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "../../Components/Header";
 import CompaniesBanner from "@/app/Components/CompaniesBanner";
 // import { useState } from "react";
 const Page = async ({ params }) => {
-    // const [loading, setLoading] = useState(true);
 
   // Extract brand slug from URL
   const { brands } = await params;
