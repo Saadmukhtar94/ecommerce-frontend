@@ -3,6 +3,8 @@ import React from "react";
 import styles from "./page.module.css";
 import Header from "../../Components/Header";
 import CompaniesBanner from "@/app/Components/CompaniesBanner";
+import Footer from "@/app/Components/Footer";
+
 // import { useState } from "react";
 const Page = async ({ params }) => {
 
@@ -83,11 +85,16 @@ key={phone.id}
   </div>
 </div>
 </div>
+
             );
           })}
+
         </div>
       )}
+
     </div>
+                          <Footer/>
+
   </>
    
   );
