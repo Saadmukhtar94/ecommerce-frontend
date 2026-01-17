@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Banner from "./Components/Banner";
 import Carousel from "./Components/Carousel";
 import FooterBanner from "./Components/FooterBanner";
+import Footer from "./Components/Footer";
 
 import Header from "./Components/Header";
 import Companies from "./Components/Companies";
@@ -16,6 +17,7 @@ export default function Home() {
      <Banner/>
      <Companies/>
 <FooterBanner/>
+<Footer/>
     </div>
   );
 }
