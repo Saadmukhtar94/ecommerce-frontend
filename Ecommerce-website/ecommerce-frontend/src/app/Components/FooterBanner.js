@@ -42,17 +42,12 @@ const FooterBanner = () => {
 
   return (
     <div className="footer-banner">
-      {/* <Image
-        src={banner.url}
-        alt={banner.alt}
-        width={banner.width}
-        height={banner.height}
-        style={{ width: "100%", height: "auto" }}
-      /> */}
+      
       <img
   src={banner.url}
   alt={banner.alt}
   style={{ width: "100%", height: "150px" }}
+  
 />
 
     </div>
