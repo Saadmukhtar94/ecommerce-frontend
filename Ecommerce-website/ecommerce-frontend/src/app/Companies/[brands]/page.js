@@ -1,5 +1,6 @@
 import React from "react";
 // import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 import Header from "../../Components/Header";
 import CompaniesBanner from "@/app/Components/CompaniesBanner";
@@ -67,9 +68,9 @@ key={phone.id}
 />
                 </div>  
                  <div className="card-body d-flex justify-content-between">
-    <h5 className="card-title "><a href="#" className="text-decoration-none text-dark">
+    <h5 className="card-title "><Link href={`/product/${phone.slug}`} className="text-decoration-none text-dark">
         {name}
-        </a></h5>
+        </Link></h5>
     <p className="card-text"><i className="fa-regular fa-bookmark"></i></p>
   </div>
   <hr/>
@@ -79,8 +80,11 @@ key={phone.id}
     <li><h4> <span className="fs-6 px-1">aed</span>
         {price}
         </h4></li>
-    <li>  <button className="btn btn-dark">Buy Now</button></li>
-
+    <li>
+       <Link href={`/product/${phone.slug}`}>
+        <button className="btn btn-dark">Buy Now</button>
+        </Link>      
+        </li>
    </ul>
   </div>
 </div>
